@@ -9,7 +9,8 @@ module.exports = {
   },
   output: {
     path: path.resolve('dist'),
-    filename: '[name].[chunkhash:8].js'
+    filename: '[name].[chunkhash:8].js',
+    publicPath: '/dist'
   },
   plugins: [
     new CleanWebpackPlugin(),
